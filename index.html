@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+    <title>Propos.io UI Demo</title>
+    <script src="jquery.js"></script>
+    <script src="transit.js"></script>
+    <script src="angular.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    
+    <script src="http://code.angularjs.org/1.2.11/angular-route.min.js"></script>
+    <script src="http://code.angularjs.org/1.2.11/angular-animate.min.js"></script>
+    
+    
+    <script src="teather.js"></script>
+    
+        <link rel="stylesheet" href="drop/css/drop-theme-arrows.css" />
+        <script src="drop/drop.min.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animate.css">
+</head>
+<body ng-app="proposio">
+    
+    <div class="full-bg"></div>
+    <div class="content">
+    
+        <header ng-controller="HeaderCtrl">
+            <span class="brand">Props.io</span>
+            <div id="profile-button" class="profile springAll" ng-click="loadProfile($event)" style="background-image: url('https://scontent-b.xx.fbcdn.net/hphotos-prn2/t1/1477765_10202567317687883_684427228_n.jpg');">
+            </div>
+        </header>
+    
+        <div id="sidebar" ng-controller="SidebarCtrl">
+            
+            <div class="left-nav">
+                <ul class="activated">
+                    <li id="home-nav" class="active">
+                        <span ng-click="show('home')">
+                            <a href="#"><span style="font-size: 30px; padding: 18px;" class="glyphicon glyphicon-home"></span></a>
+                        </span>
+                        <ul id="subnav">
+                            <li id="proposals-nav" class="navtype spring">
+                                <a href="#/proposals" ng-click="show('proposals')" class="tooltip-enable" data-toggle="tooltip" data-placement="right" title="Proposals">
+                                    <span style="font-size: 30px; padding: 18px;" class="glyphicon glyphicon-th-list"></span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a><span id="menu-new-proposal" class="has-popover">
+                                            <span style="font-size: 30px; padding: 18px;" class="glyphicon glyphicon-plus"></span>
+                                        </span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="templates-nav" class="navtype spring">
+                                <a href="#/templates" class="tooltip-enable" data-toggle="tooltip" data-placement="right" title="Templates" ng-click="show('templates')">
+                                    <span style="font-size: 30px; padding: 18px;" class="glyphicon glyphicon-list-alt"></span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a><span id="menu-new-template" class="has-popover">
+                                            <span style="font-size: 30px; padding: 18px;" class="glyphicon glyphicon-plus"></span>
+                                        </span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="clients-nav" class="navtype spring">
+                                <a href="#/clients" ng-click="show('clients')" class="tooltip-enable" data-toggle="tooltip" data-placement="right" title="Clients">
+                                    <span style="font-size: 30px; padding: 18px;" class="glyphicon glyphicon-user"></span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a><span id="menu-new-client" class="has-popover">
+                                            <span style="font-size: 30px; padding: 18px;" class="glyphicon glyphicon-plus"></span>
+                                        </span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div class="view-animate-container main">
+            <div ng-view class="view-animate mm"></div>
+        </div>
+
+        
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

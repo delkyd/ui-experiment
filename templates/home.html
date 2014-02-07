@@ -1,0 +1,44 @@
+<div>
+    <span class="page-heading">Recent Proposals</span>
+</div>
+<div class="clearfix">
+    <div class="data-block" ng-repeat="datum in data | limitTo: 3">
+        <span>{{datum.proposal}}</span>
+        <p class="text-muted">
+            <span class="">Created Feb 20, 2013.</span>
+        </p>
+    </div>
+</div>
+<p style="margin-top: 10px;">
+    <a class="btn btn-primary" href="#/proposals">See more...</a>
+</p>
+
+<div>
+    <span class="page-heading">Recent templates</span>
+</div>
+<div class="clearfix">
+    <div class="data-block" ng-repeat="datum in data | limitTo: 3">
+        <span>{{datum.template}}</span>
+        <p class="text-muted">
+            <span class="">Created Feb 20, 2013.</span>
+        </p>
+    </div>
+</div>
+<p style="margin-top: 10px;">
+    <a class="btn btn-primary" href="#/templates">See more...</a>
+</p>
+
+<div>
+    <span class="page-heading">Recent Clients</span>
+</div>
+<div class="clearfix">
+    <div class="data-block" ng-repeat="datum in data | limitTo: 3">
+        <span>{{datum.client}}</span>
+        <p class="text-muted">
+            <span class="">Created Feb 20, 2013.</span>
+        </p>
+    </div>
+</div>
+<p style="margin-top: 10px;">
+    <a class="btn btn-primary" href="#/clients">See more...</a>
+</p>

@@ -1,0 +1,25 @@
+{
+  "name": "Tooltip",
+  "version": "0.1.3",
+  "homepage": "https://github.hubspot.com/tooltip",
+  "authors": [
+    "Adam Schwartz <adam.flynn.schwartz@gmail.com>"
+  ],
+  "description": "Tooltips built on Tether",
+  "keywords": [
+    "javascript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.9.x",
+    "tether": "0.1.x",
+    "drop": "0.1.x"
+  }
+}

@@ -1,0 +1,11 @@
+<div>
+    <span class="page-heading">Clients:</span> <input class="header-search" ng-model="search.client" placeholder="Enter text to search..." />
+</div>
+<div class="clearfix">
+    <div class="data-block" ng-repeat="datum in data | filter: search" ng-class="getClass($index, data)">
+        <span>{{datum.client}}</span>
+        <p class="text-muted">
+            <span class="">Created Feb 20, 2013.</span>
+        </p>
+    </div>
+</div>
