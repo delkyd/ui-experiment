@@ -118,7 +118,7 @@ angular.module('proposio', ['ngRoute', 'ngAnimate'])
             $('#profile-button').transition({y: '-120px'});
             
             //Generate insertion HTML:
-            var html = $('<li><span style="background-image: url(\'https://scontent-b.xx.fbcdn.net/hphotos-prn2/t1/1477765_10202567317687883_684427228_n.jpg\'); background-size: cover;"></span></li>');
+            var html = $('<li><span style="background-image: url(\'http://theoutsidescoop.net/wp-content/uploads/2011/10/poo.png\'); background-size: cover;"></span></li>');
             insert.html = html;
             
             //Insert it:
